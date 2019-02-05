@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">AdapteryTresci</string>
+    <string name="descriptionString">cwiczenie 2</string>
+    <string name="nameString">Oktawian Lasek 204828</string>
+    <string name="button1">Settings</string>
+    <string name="button2">Add</string>
+    <string name="button3">List</string>
+    <string name="opcja1">Mala</string>
+    <string name="opcja2">Średnia</string>
+    <string name="opcja3">Duża</string>
+
+    <string name="opcjaData1">Mężczyzna</string>
+    <string name="opcjaData2">Kobieta</string>
+    <string name="nazwa">Dane</string>
+    <string name="liczba">Wiek</string>
+    <string name="nazwaEit">Imię i nazwisko</string>
+    <string name="liczbaEit">18</string>
+
+    <string name="text">tekst</string>
+    <string name="email">e-mail</string>
+    <string name="number">liczba</string>
+    <string name="phone">Tel.</string>
+    <string name="priorytet">Priorytet</string>
 </resources>
