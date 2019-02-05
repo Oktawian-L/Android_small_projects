@@ -30,4 +30,11 @@
     <string name="title_activity_person_details">person_details</string>
     <string name="title_activity_pet_details">PetDetails</string>
 
+    <string name="reset">Reset</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="radio1">Domyślny tekst</string>
+    <string name="radio2">Alternatywny 1</string>
+    <string name="radio3">Alternatywny 2</string>
+
 </resources>

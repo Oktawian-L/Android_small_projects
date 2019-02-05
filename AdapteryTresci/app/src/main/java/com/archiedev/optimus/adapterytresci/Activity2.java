@@ -10,244 +10,170 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioGroup;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Activity2 extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener {
+public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-    String[] lista = {"Witaj", "Cześć", "Dzień dobry!"};
-    private int seekR, seekG, seekB, nowyRozmiarTekstu, nowypoczatekKoloru;
-    private SharedPreferences mPreferences;
-    private SharedPreferences.Editor mEditor;
-    int nrWyboruPrywitania;
-    int nrWyboruRozmiaru;
-    int rozmiarTekstu;
-    int poziomR;
-    int poziomG;
-    int poziomB;
-    int kolor;
-    int poczatekKoloru;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_2);
-
-        mPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-        //store shareprefe
-        mEditor = mPreferences.edit();
-        checkSharedPreferences();
+        private int seekR, seekG, seekB;
+        private SharedPreferences mPreferences;
+        private SharedPreferences.Editor mEditor;
+        private int color;
+        private String tekstPowitania;
+        private String opisPowitania;
+        private int czcionka;
 
 
-        final RadioGroup radioGroup = (RadioGroup) findViewById(R.id.opcje);
-        radioGroup.check(nrWyboruRozmiaru);
-        radioGroup.setOnCheckedChangeListener(this);
-        radioGroup.check(nrWyboruRozmiaru);
 
-        final TextView textView = (TextView) findViewById(R.id.textView);
-        textView.setTextSize(rozmiarTekstu);
 
-        final SeekBar sbR = (SeekBar) findViewById(R.id.RedSeekBar);
-        final SeekBar sbG = (SeekBar) findViewById(R.id.GreenSeekBar);
-        final SeekBar sbB = (SeekBar) findViewById(R.id.BlueSeekBar);
-        sbR.setProgress(poziomR);
-        sbG.setProgress(poziomG);
-        sbB.setProgress(poziomB);
-        final View view = (View) findViewById(R.id.view);
-        view.setBackgroundColor(poczatekKoloru);
-
-        final Spinner opcje = (Spinner) findViewById(R.id.spinner);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, lista);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        opcje.setAdapter(adapter);
-        opcje.setSelection(nrWyboruPrywitania);
-
-        Button saveButton = (Button) findViewById(R.id.button2);
-        saveButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                mEditor.commit();
-
-               /* //create an instance of Intent object.
-               po co
-                Intent data = new Intent();
-
-                nowyRozmiarTekstu = sp.getInt("rozmiar_tekstu", 14);
-
-                int nowypoziomR = sp.getInt("poziom_czerwony", 255);
-                int nowypoziomG = sp.getInt("poziom_zielony", 255);
-                int nowypoziomB = sp.getInt("poziom_niebieski", 0);
-                int nowyKolor = Color.rgb(nowypoziomR, nowypoziomG, nowypoziomB);
-                nowypoczatekKoloru = sp.getInt("poczatek_koloru", nowyKolor);
-
-                data.putExtra("rozmiar_tekstu", nowyRozmiarTekstu);
-                data.putExtra("kolor", nowypoczatekKoloru);
-
-                setResult(RESULT_OK,data);
-                finish();*/
-            }
-        });
-
-        Button resetButton = (Button) findViewById(R.id.button4);
-        resetButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                textView.setTextSize(rozmiarTekstu);
-                sbR.setProgress(poziomR);
-                sbG.setProgress(poziomG);
-                sbB.setProgress(poziomB);
-                radioGroup.check(nrWyboruRozmiaru);
-                view.setBackgroundColor(poczatekKoloru);
-                opcje.setSelection(nrWyboruPrywitania);
-            }
-        });
-
-        opcje.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener()
-        {
+        private SeekBar.OnSeekBarChangeListener onSeekBarChangeListener = new SeekBar.OnSeekBarChangeListener() {
 
             @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                int item = opcje.getSelectedItemPosition();
-                mEditor.putInt("nr_przywitania", item);
-                //spe.commit();
+            public void onStopTrackingTouch(SeekBar seekBar) {
             }
 
             @Override
-            public void onNothingSelected(AdapterView<?> parent) {
+            public void onStartTrackingTouch(SeekBar seekBar) {
             }
-        });
 
-        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                int rozmiarTekstu = 14;
-                int id = group.getCheckedRadioButtonId();
-                switch (id) {
-                    case R.id.radioButton: rozmiarTekstu = 14;
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                switch (seekBar.getId()) {
+                    case R.id.redSeekbar:
+                        seekR = progress;
                         break;
-                    case R.id.radioButton2: rozmiarTekstu = 18;
+                    case R.id.greenSeekbar:
+                        seekG = progress;
                         break;
-                    case R.id.radioButton3: rozmiarTekstu = 22;
-                    default:
+                    case R.id.blueSeekbar:
+                        seekB = progress;
                         break;
                 }
 
-                textView.setTextSize(rozmiarTekstu);
-                mEditor.putInt("rozmiar_tekstu", rozmiarTekstu);
-                mEditor.putInt("nr_rozmiaru", id);
-                //spe.commit();
+                doSomethingWithColor();
             }
-    });
+        };
 
-        sbR.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        @Override
+        public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_2);
 
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-            }
+            SeekBar sbR = (SeekBar) findViewById(R.id.redSeekbar);
+            SeekBar sbG = (SeekBar) findViewById(R.id.greenSeekbar);
+            SeekBar sbB = (SeekBar) findViewById(R.id.blueSeekbar);
 
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-            }
+            sbR.setOnSeekBarChangeListener(onSeekBarChangeListener);
+            sbG.setOnSeekBarChangeListener(onSeekBarChangeListener);
+            sbB.setOnSeekBarChangeListener(onSeekBarChangeListener);
 
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                seekR = progress;
+            Spinner spinner = findViewById(R.id.spinner);
+            ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.texts, android.R.layout.simple_spinner_item);
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            spinner.setAdapter(adapter);
+            spinner.setOnItemSelectedListener(this);
 
-                ChangeColor(view);
-                mEditor.putInt("poziom_czerwony", progress);
-                //spe.commit();
-            }
-        });
 
-        sbG.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-            }
+            RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+            radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+            {
+                @Override
+                public void onCheckedChanged(RadioGroup group, int checkedId)
+                {
+                    switch (checkedId) {
+                        case R.id.radioButton:
+                            tekstPowitania = "Pierwszy tekst powitalny";
+                            opisPowitania = "Opis powitania pierwszego";
+                            break;
+                        case R.id.radioButton2:
+                            tekstPowitania = "Drugi tekst powitalny";
+                            opisPowitania = "Opis powitania drugiego";
+                            break;
+                        case R.id.radioButton3:
+                            tekstPowitania = "Trzeci tekst powitalny";
+                            opisPowitania = "Opis powitania trzeciego";
+                            break;
+                    }
+                }
+            });
 
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-            }
 
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                seekG = progress;
+            Button save = findViewById(R.id.save);
 
-                mEditor.putInt("poziom_zielony", progress);
-                //spe.commit();
-                ChangeColor(view);
-            }
-        });
+            save.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    saveData();
+                    finish();   //Closes activity
+                }
+            });
 
-        sbB.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            Button reset = findViewById(R.id.reset);
 
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-            }
+            reset.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    color = Color.parseColor("white");
+                    tekstPowitania = "Pierwszy tekst powitalny";
+                    opisPowitania = "Opis powitania pierwszego";
+                    czcionka = 25;
 
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-            }
+                    saveData();
+                    finish();   //Closes activity
+                }
+            });
 
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                seekB = progress;
+            Button cancel = findViewById(R.id.cancel);
 
-                mEditor.putInt("poziom_niebieski", progress);
-                //spe.commit();
-                ChangeColor(view);
-            }
-        });
-
-    }
-
-    private void checkSharedPreferences() {
-        nrWyboruPrywitania = mPreferences.getInt("nr_przywitania", 0);
-        nrWyboruRozmiaru =mPreferences.getInt("nr_rozmiaru", R.id.radioButton);
-        rozmiarTekstu = mPreferences.getInt("rozmiar_tekstu", 14);
-        poziomR = mPreferences.getInt("poziom_czerwony", 255);
-       poziomG = mPreferences.getInt("poziom_zielony", 255);
-        poziomB = mPreferences.getInt("poziom_niebieski", 0);
-        kolor = Color.rgb(poziomR, poziomG, poziomB);
-        poczatekKoloru = mPreferences.getInt("poczatek_koloru", kolor);
-    }
-
-    private void ChangeColor(View view) {
-        int color = Color.rgb(seekR, seekG, seekB);
-        view.setBackgroundColor(color);
-    }
-
-    @Override
-    public void onCheckedChanged(RadioGroup group, int checkedId) {
-        TextView textView= (TextView) findViewById(R.id.textView);
-        int rozmiarTekstu = 14;
-        int id = group.getCheckedRadioButtonId();
-        switch (id) {
-            case R.id.radioButton: rozmiarTekstu = 14;
-                break;
-            case R.id.radioButton2: rozmiarTekstu = 16;
-                break;
-            case R.id.radioButton3: rozmiarTekstu = 18;
-            default:
-                break;
+            cancel.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    finish();   //Closes activity
+                }
+            });
         }
 
-        textView.setTextSize(rozmiarTekstu);
-    }
+        private void doSomethingWithColor() {
+            ImageView rbg = (ImageView) findViewById(R.id.RGB);
+            color = Color.rgb(seekR, seekG, seekB);
+            rbg.setBackgroundColor(color);
+
+        }
+
+        @Override
+        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+            String tmp = parent.getItemAtPosition(position).toString();
+
+            if(tmp == "Rozmiar 1"){
+                czcionka = 20;
+            } else if (tmp == "Rozmiar 2"){
+                czcionka = 25;
+            }
+            else {
+                czcionka = 30;
+            }
+        }
+
+        @Override
+        public void onNothingSelected(AdapterView<?> parent) {
+
+        }
+
+        private void saveData() {
+            mPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+            mEditor = mPreferences.edit();
 
 
-    public void uruchomJeden(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
+            mEditor.putInt("backgroundColor", color);
+            mEditor.putString("testPowitania", tekstPowitania);
+            mEditor.putString("opisPowitania", opisPowitania);
+            mEditor.putInt("czcionka", czcionka);
 
-    public void reset(View view) {
-
+            mEditor.commit();
+        }
     }
-    public void opcjaBack(View view) {
-        onBackPressed();
-    }
-}

@@ -21,4 +21,16 @@
     <string name="number">liczba</string>
     <string name="phone">Tel.</string>
     <string name="priorytet">Priorytet</string>
+    <string name="reset">Reset</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="radio1">Domyślny tekst</string>
+    <string name="radio2">Alternatywny 1</string>
+    <string name="radio3">Alternatywny 2</string>
+
+    <string-array name="texts">
+        <item>Rozmiar 1</item>
+        <item>Rozmiar 2</item>
+        <item>Rozmiar 3</item>
+    </string-array>
 </resources>
