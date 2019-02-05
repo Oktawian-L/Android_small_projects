@@ -26,11 +26,11 @@ public class PersonDetails extends AppCompatActivity {
         plec.setText(String.valueOf(osoba.getPlec()));
         ImageView plecImg = (ImageView) findViewById(R.id.imageView);
         if (osoba.getPlec()=='M') {
-            plec.setText("Płeć: Mężczyzna");
+            plec.setText("Typ:Spalinowy");
             plecImg.setImageResource(R.drawable.male);
         }
         else {
-            plec.setText("Płeć: Kobieta");
+            plec.setText("Typ:Elektryczny");
             plecImg.setImageResource(R.drawable.female);
         }
         }

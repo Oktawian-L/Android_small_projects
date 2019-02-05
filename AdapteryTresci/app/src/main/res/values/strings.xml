@@ -9,12 +9,12 @@
     <string name="opcja2">Średnia</string>
     <string name="opcja3">Duża</string>
 
-    <string name="opcjaData1">Mężczyzna</string>
-    <string name="opcjaData2">Kobieta</string>
+    <string name="opcjaData1">Elektryczny</string>
+    <string name="opcjaData2">Spalinowy</string>
     <string name="nazwa">Dane</string>
-    <string name="liczba">Wiek</string>
-    <string name="nazwaEit">Imię i nazwisko</string>
-    <string name="liczbaEit">18</string>
+    <string name="liczba">Rocznik</string>
+    <string name="nazwaEit">Model</string>
+    <string name="liczbaEit">2</string>
 
     <string name="text">tekst</string>
     <string name="email">e-mail</string>
