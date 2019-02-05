@@ -3,6 +3,7 @@ package com.archiedev.optimus.adapterytresci;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,22 +20,26 @@ public class Activity2 extends AppCompatActivity implements RadioGroup.OnChecked
 
     String[] lista = {"Witaj", "Cześć", "Dzień dobry!"};
     private int seekR, seekG, seekB, nowyRozmiarTekstu, nowypoczatekKoloru;
-
+    private SharedPreferences mPreferences;
+    private SharedPreferences.Editor mEditor;
+    int nrWyboruPrywitania;
+    int nrWyboruRozmiaru;
+    int rozmiarTekstu;
+    int poziomR;
+    int poziomG;
+    int poziomB;
+    int kolor;
+    int poczatekKoloru;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
 
-        final SharedPreferences sp = getSharedPreferences("dane_apki", MODE_PRIVATE);
-        final SharedPreferences.Editor spe = sp.edit();
-        final int nrWyboruPrywitania = sp.getInt("nr_przywitania", 0);
-        final int nrWyboruRozmiaru = sp.getInt("nr_rozmiaru", R.id.radioButton);
-        final int rozmiarTekstu = sp.getInt("rozmiar_tekstu", 14);
-        final int poziomR = sp.getInt("poziom_czerwony", 255);
-        final int poziomG = sp.getInt("poziom_zielony", 255);
-        final int poziomB = sp.getInt("poziom_niebieski", 0);
-        final int kolor = Color.rgb(poziomR, poziomG, poziomB);
-        final int poczatekKoloru = sp.getInt("poczatek_koloru", kolor);
+        mPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        //store shareprefe
+        mEditor = mPreferences.edit();
+        checkSharedPreferences();
+
 
         final RadioGroup radioGroup = (RadioGroup) findViewById(R.id.opcje);
         radioGroup.check(nrWyboruRozmiaru);
@@ -64,9 +69,10 @@ public class Activity2 extends AppCompatActivity implements RadioGroup.OnChecked
             @Override
             public void onClick(View v) {
 
-                spe.commit();
+                mEditor.commit();
 
-                //create an instance of Intent object.
+               /* //create an instance of Intent object.
+               po co
                 Intent data = new Intent();
 
                 nowyRozmiarTekstu = sp.getInt("rozmiar_tekstu", 14);
@@ -81,7 +87,7 @@ public class Activity2 extends AppCompatActivity implements RadioGroup.OnChecked
                 data.putExtra("kolor", nowypoczatekKoloru);
 
                 setResult(RESULT_OK,data);
-                finish();
+                finish();*/
             }
         });
 
@@ -105,7 +111,7 @@ public class Activity2 extends AppCompatActivity implements RadioGroup.OnChecked
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 int item = opcje.getSelectedItemPosition();
-                spe.putInt("nr_przywitania", item);
+                mEditor.putInt("nr_przywitania", item);
                 //spe.commit();
             }
 
@@ -130,8 +136,8 @@ public class Activity2 extends AppCompatActivity implements RadioGroup.OnChecked
                 }
 
                 textView.setTextSize(rozmiarTekstu);
-                spe.putInt("rozmiar_tekstu", rozmiarTekstu);
-                spe.putInt("nr_rozmiaru", id);
+                mEditor.putInt("rozmiar_tekstu", rozmiarTekstu);
+                mEditor.putInt("nr_rozmiaru", id);
                 //spe.commit();
             }
     });
@@ -151,7 +157,7 @@ public class Activity2 extends AppCompatActivity implements RadioGroup.OnChecked
                 seekR = progress;
 
                 ChangeColor(view);
-                spe.putInt("poziom_czerwony", progress);
+                mEditor.putInt("poziom_czerwony", progress);
                 //spe.commit();
             }
         });
@@ -170,7 +176,7 @@ public class Activity2 extends AppCompatActivity implements RadioGroup.OnChecked
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 seekG = progress;
 
-                spe.putInt("poziom_zielony", progress);
+                mEditor.putInt("poziom_zielony", progress);
                 //spe.commit();
                 ChangeColor(view);
             }
@@ -190,12 +196,23 @@ public class Activity2 extends AppCompatActivity implements RadioGroup.OnChecked
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 seekB = progress;
 
-                spe.putInt("poziom_niebieski", progress);
+                mEditor.putInt("poziom_niebieski", progress);
                 //spe.commit();
                 ChangeColor(view);
             }
         });
 
+    }
+
+    private void checkSharedPreferences() {
+        nrWyboruPrywitania = mPreferences.getInt("nr_przywitania", 0);
+        nrWyboruRozmiaru =mPreferences.getInt("nr_rozmiaru", R.id.radioButton);
+        rozmiarTekstu = mPreferences.getInt("rozmiar_tekstu", 14);
+        poziomR = mPreferences.getInt("poziom_czerwony", 255);
+       poziomG = mPreferences.getInt("poziom_zielony", 255);
+        poziomB = mPreferences.getInt("poziom_niebieski", 0);
+        kolor = Color.rgb(poziomR, poziomG, poziomB);
+        poczatekKoloru = mPreferences.getInt("poczatek_koloru", kolor);
     }
 
     private void ChangeColor(View view) {

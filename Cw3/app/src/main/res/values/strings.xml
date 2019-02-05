@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Cw3_Zad</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment1String">To jest fragment 1</string>
+    <string name="fragment2String">To jest fragment 11</string>
+    <string name="fragment3String">To jest fragment 12</string>
+    <string name="opcja1">Opcja 1</string>
+    <string name="opcja2">Opcja 2</string>
+    <string name="activity2">Przejdz do aktywnosci 2</string>
+
+    <string name="opcjaData1">Pies</string>
+    <string name="opcjaData2">Kot</string>
+    <string name="nazwa">Dane</string>
+    <string name="liczba">Wiek</string>
+    <string name="nazwaEit">Imię i nazwisko</string>
+    <string name="liczbaEit">18</string>
+
+    <string name="text">tekst</string>
+    <string name="email">e-mail</string>
+    <string name="number">liczba</string>
+    <string name="phone">Tel.</string>
+    <string name="priorytet">Priorytet</string>
+    <string name="rozmiar">Rozmiar</string>
+    <string name="title_activity_person_details">person_details</string>
+    <string name="title_activity_pet_details">PetDetails</string>
+
+</resources>
