@@ -22,4 +22,10 @@ public class Activity4 extends Activity {
     public void uruchomJeden(View view) {
         onBackPressed();
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Toast.makeText(getApplicationContext(),"Aktywnosc 3 - zatrzymana",Toast.LENGTH_SHORT).show();
+    }
 }

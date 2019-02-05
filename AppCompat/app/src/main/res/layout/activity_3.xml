@@ -33,7 +33,7 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:text="abc_xyz" />
             </TableRow>
 
             <TableRow
@@ -54,7 +54,7 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textEmailAddress"
-                    android:text="E-mail" />
+                    android:text="abc@xyz.pl" />
             </TableRow>
 
             <TableRow
@@ -75,7 +75,7 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="number"
-                    android:text="123" />
+                    android:text="123,45" />
             </TableRow>
 
             <TableRow
@@ -96,7 +96,7 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="phone"
-                    android:text="112233445" />
+                    android:text="71-32-32" />
             </TableRow>
         </TableLayout>
     </ScrollView>

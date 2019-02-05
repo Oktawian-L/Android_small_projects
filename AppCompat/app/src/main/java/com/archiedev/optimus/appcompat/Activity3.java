@@ -20,9 +20,9 @@ public class Activity3 extends AppCompatActivity {
 
     public void toast(View view) {
         TextView tekst = findViewById(R.id.editText2);
-        TextView email = findViewById(R.id.email);
-        TextView liczba = findViewById(R.id.liczba);
-        TextView phone = findViewById(R.id.phone);
+        TextView email = findViewById(R.id.editText3);
+        TextView liczba = findViewById(R.id.editText4);
+        TextView phone = findViewById(R.id.editText5);
 
 
         String napis = "";
