@@ -46,8 +46,8 @@ public class Activity2 extends AppCompatActivity implements RadioGroup.OnChecked
         radioGroup.setOnCheckedChangeListener(this);
         radioGroup.check(nrWyboruRozmiaru);
 
-        final TextView textView = (TextView) findViewById(R.id.textView);
-        textView.setTextSize(rozmiarTekstu);
+        /*final TextView textView = (TextView) findViewById(R.id.textView);
+        textView.setTextSize(rozmiarTekstu);*/
 
         final SeekBar sbR = (SeekBar) findViewById(R.id.RedSeekBar);
         final SeekBar sbG = (SeekBar) findViewById(R.id.GreenSeekBar);
@@ -95,7 +95,7 @@ public class Activity2 extends AppCompatActivity implements RadioGroup.OnChecked
         resetButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                textView.setTextSize(rozmiarTekstu);
+                //textView.setTextSize(rozmiarTekstu);
                 sbR.setProgress(poziomR);
                 sbG.setProgress(poziomG);
                 sbB.setProgress(poziomB);
@@ -135,7 +135,7 @@ public class Activity2 extends AppCompatActivity implements RadioGroup.OnChecked
                         break;
                 }
 
-                textView.setTextSize(rozmiarTekstu);
+                //textView.setTextSize(rozmiarTekstu);
                 mEditor.putInt("rozmiar_tekstu", rozmiarTekstu);
                 mEditor.putInt("nr_rozmiaru", id);
                 //spe.commit();
@@ -222,7 +222,7 @@ public class Activity2 extends AppCompatActivity implements RadioGroup.OnChecked
 
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
-        TextView textView= (TextView) findViewById(R.id.textView);
+        //TextView textView= (TextView) findViewById(R.id.textView);
         int rozmiarTekstu = 14;
         int id = group.getCheckedRadioButtonId();
         switch (id) {
@@ -235,7 +235,7 @@ public class Activity2 extends AppCompatActivity implements RadioGroup.OnChecked
                 break;
         }
 
-        textView.setTextSize(rozmiarTekstu);
+        //textView.setTextSize(rozmiarTekstu);
     }
 
 
