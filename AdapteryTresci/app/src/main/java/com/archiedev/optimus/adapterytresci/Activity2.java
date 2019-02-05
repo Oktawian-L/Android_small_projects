@@ -230,4 +230,7 @@ public class Activity2 extends AppCompatActivity implements RadioGroup.OnChecked
     public void reset(View view) {
 
     }
+    public void opcjaBack(View view) {
+        onBackPressed();
+    }
 }
