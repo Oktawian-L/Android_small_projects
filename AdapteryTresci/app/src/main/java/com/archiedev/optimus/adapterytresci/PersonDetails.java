@@ -13,7 +13,7 @@ public class PersonDetails extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_person_details);
 
-        final Intent i = getIntent();
+       /* final Intent i = getIntent();
         Osoba osoba = (Osoba)i.getSerializableExtra("sampleObject");
 
         TextView dane = (TextView) findViewById(R.id.textViewName);
@@ -32,6 +32,7 @@ public class PersonDetails extends AppCompatActivity {
         else {
             plec.setText("Typ:Elektryczny");
             plecImg.setImageResource(R.drawable.female);
+        }*/
         }
-        }
+
 }
