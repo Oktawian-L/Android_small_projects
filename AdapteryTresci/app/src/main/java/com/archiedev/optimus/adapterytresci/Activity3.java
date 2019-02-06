@@ -35,7 +35,7 @@ public class Activity3 extends AppCompatActivity {
                 break;
         }
 
-        Osoba osoba = new Osoba("Jan Kowalski", 22, 4, 'M');
+        Osoba osoba = new Osoba("Mazda", 22, 4, 'M');
         osoba.setName(editText2.getText().toString());
         osoba.setWiek(Integer.parseInt(editText.getText().toString()));
         osoba.setPriorytet(Integer.parseInt(String.valueOf(seekBar.getProgress() + 1)));
@@ -49,4 +49,5 @@ public class Activity3 extends AppCompatActivity {
     }
 
 }
+
 

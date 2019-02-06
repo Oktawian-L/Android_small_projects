@@ -40,7 +40,7 @@ public class OsobaAdapter extends BaseAdapter {
             holder = (ViewHolder) convertView.getTag();
 
         holder.tvName.setText(actorList.get(position).getName());
-        holder.tvDescription.setText("Wiek: " + (actorList.get(position).getWiek()));
+        holder.tvDescription.setText("Rocznik auta: " + (actorList.get(position).getWiek()));
         if (actorList.get(position).getPlec()=='M')
             holder.ivGender.setImageResource(R.drawable.male);
         else

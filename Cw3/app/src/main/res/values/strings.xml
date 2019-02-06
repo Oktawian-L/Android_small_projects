@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">zadanie3B</string>
+    <string name="app_name">ActionBar</string>
 
     <string name="fragment1">fragment1</string>
     <string name="fragment11">fragment11</string>
     <string name="fragment12">fragment12</string>
     <string name="radio1">radio1</string>
     <string name="radio2">radio2</string>
-    <string name="buttonActivity1">Aktywność 2</string>
+    <string name="buttonActivity1">ActionBar</string>
 </resources>
