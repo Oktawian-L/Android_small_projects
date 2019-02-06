@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">zadanie3.2</string>
+    <string name="ideks">204828</string>
+    <string name="data">2019-02-06</string>
+    <string name="autor">Oktawian Lasek</string>
+    <string name="one">Action 1</string>
+    <string name="two">Action 2</string>
+    <string name="three">Action 3</string>
+    <string name="four">Action 4</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello</string>
+    <string name="wybor1">wybor1</string>
+    <string name="wybor2">wybor2</string>
+    <string name="back">Back</string>
+</resources>
