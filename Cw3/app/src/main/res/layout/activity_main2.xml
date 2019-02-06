@@ -4,26 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".Main2Activity"
     android:orientation="vertical">
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/buttonActivity1"
-        android:id="@+id/aktywnosc2"/>
-
-    <fragment
-        android:id="@+id/fragment"
-        android:name="com.example.beata.zadanie3.Fragment1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/kontener"
-        >
+        android:id="@+id/kontener2">
 
     </FrameLayout>
+
 </LinearLayout>

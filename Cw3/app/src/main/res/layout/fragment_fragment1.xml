@@ -2,49 +2,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".Fragment1">
 
     <!-- TODO: Update blank fragment layout -->
-
-    <RadioGroup
-        android:id="@+id/opcje"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            android:text="@string/opcja1" />
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            android:text="@string/opcja2" />
-
-    </RadioGroup>
-
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center_horizontal"
-        android:gravity="bottom|center_horizontal"
-        android:orientation="vertical">
+        android:text="@string/fragment1"
+        android:textAlignment="center"/>
 
-        <FrameLayout
-            android:id="@+id/kontener"
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/radio">
+
+        <RadioButton
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></FrameLayout>
+            android:layout_height="wrap_content"
+            android:text="@string/radio1"
+            android:id="@+id/radio1"/>
 
-    </LinearLayout>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio2"
+            android:id="@+id/radio2"/>
+    </RadioGroup>
 
 </LinearLayout>
