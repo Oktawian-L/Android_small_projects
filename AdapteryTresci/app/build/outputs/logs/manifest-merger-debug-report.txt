@@ -1,0 +1,176 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:2:1-31:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\3bc0bdfc2c1bee5b6b7f57f95f60e9f1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\b9b087d2f28b329c4d570379a0100b40\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\209e90ed16d2bbc71b31818d10008ecb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\8a69e3c42573ce0faa11859ae1995ead\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\4e4efdfd50a5b744a4e05555697fe983\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\ea2f0d50112f8cc3437c35f39b9da44b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\44d6800d8e2b3e626191b6ca228b507c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\469c7b9858436f700c9a16d079f6977e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\a12e76f29e95b501985ed4ab986eea7c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\a824dedbfe9e6934a1e8556dd13e289a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\b2dc173f3dd900a7e35da7240935c209\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\8e0e9d3c0a4e249aead675c6705c64f8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\80b49c729a90a78f045412c65a2e7405\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\2dc2e7ea450aa25c7c462db8a3063b82\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\e3398a51dfbdbc4450b26b4f30a8e16b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\47147fd65faab3c5906bae2ba1f47de6\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\6645803d745237debac01efbb38cff93\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\ca1f58e08841a8c384525bdd6d08e24c\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\9ed5bba047ba71dafd7f76d4597dea97\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\93b48793f6be145cbb265232407a8c96\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\311e99d83a92a941a4bbb6a907a72234\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\e67ebec6976b3235c77c04b0d7e6993c\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\83683f643f301dfd5b91142062be3129\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\ce7f7a6cde01c6b47e97f01761bc06ca\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\bcef4348c724643802b38bbd122b3317\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\0fec8cfeedbc6ceda33c196d0d6e0fc8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\397c6f121ab6bc1622a5a3da33d56ede\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:2:1-31:12
+	package
+		ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:3:5-51
+		INJECTED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml
+		INJECTED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml
+		ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:2:1-31:12
+		INJECTED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml
+		ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:2:1-31:12
+		INJECTED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:5:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\b9b087d2f28b329c4d570379a0100b40\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\b9b087d2f28b329c4d570379a0100b40\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\47147fd65faab3c5906bae2ba1f47de6\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\47147fd65faab3c5906bae2ba1f47de6\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\6645803d745237debac01efbb38cff93\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\6645803d745237debac01efbb38cff93\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\47147fd65faab3c5906bae2ba1f47de6\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:8:9-28
+	android:roundIcon
+		ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:11:9-40
+activity#com.archiedev.optimus.adapterytresci.MainActivity
+ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:16:27-74
+activity#com.archiedev.optimus.adapterytresci.Activity2
+ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:19:9-21:58
+	android:parentActivityName
+		ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:21:13-55
+	android:name
+		ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:20:13-38
+activity#com.archiedev.optimus.adapterytresci.Activity3
+ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:22:9-24:58
+	android:parentActivityName
+		ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:24:13-55
+	android:name
+		ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:23:13-38
+activity#com.archiedev.optimus.adapterytresci.Activity4
+ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:25:9-27:58
+	android:parentActivityName
+		ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:27:13-55
+	android:name
+		ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:26:13-38
+activity#com.archiedev.optimus.adapterytresci.PersonDetails
+ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:28:9-60
+	android:name
+		ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml:28:19-48
+uses-sdk
+INJECTED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml
+INJECTED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\3bc0bdfc2c1bee5b6b7f57f95f60e9f1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\3bc0bdfc2c1bee5b6b7f57f95f60e9f1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\b9b087d2f28b329c4d570379a0100b40\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\b9b087d2f28b329c4d570379a0100b40\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\209e90ed16d2bbc71b31818d10008ecb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\209e90ed16d2bbc71b31818d10008ecb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\8a69e3c42573ce0faa11859ae1995ead\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\8a69e3c42573ce0faa11859ae1995ead\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\4e4efdfd50a5b744a4e05555697fe983\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\4e4efdfd50a5b744a4e05555697fe983\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\ea2f0d50112f8cc3437c35f39b9da44b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\ea2f0d50112f8cc3437c35f39b9da44b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\44d6800d8e2b3e626191b6ca228b507c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\44d6800d8e2b3e626191b6ca228b507c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\469c7b9858436f700c9a16d079f6977e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\469c7b9858436f700c9a16d079f6977e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\a12e76f29e95b501985ed4ab986eea7c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\a12e76f29e95b501985ed4ab986eea7c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\a824dedbfe9e6934a1e8556dd13e289a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\a824dedbfe9e6934a1e8556dd13e289a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\b2dc173f3dd900a7e35da7240935c209\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\b2dc173f3dd900a7e35da7240935c209\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\8e0e9d3c0a4e249aead675c6705c64f8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\8e0e9d3c0a4e249aead675c6705c64f8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\80b49c729a90a78f045412c65a2e7405\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\80b49c729a90a78f045412c65a2e7405\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\2dc2e7ea450aa25c7c462db8a3063b82\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\2dc2e7ea450aa25c7c462db8a3063b82\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\e3398a51dfbdbc4450b26b4f30a8e16b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\e3398a51dfbdbc4450b26b4f30a8e16b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\47147fd65faab3c5906bae2ba1f47de6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\47147fd65faab3c5906bae2ba1f47de6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\6645803d745237debac01efbb38cff93\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\6645803d745237debac01efbb38cff93\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\ca1f58e08841a8c384525bdd6d08e24c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\ca1f58e08841a8c384525bdd6d08e24c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\9ed5bba047ba71dafd7f76d4597dea97\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\9ed5bba047ba71dafd7f76d4597dea97\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\93b48793f6be145cbb265232407a8c96\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\93b48793f6be145cbb265232407a8c96\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\311e99d83a92a941a4bbb6a907a72234\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\311e99d83a92a941a4bbb6a907a72234\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\e67ebec6976b3235c77c04b0d7e6993c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\e67ebec6976b3235c77c04b0d7e6993c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\83683f643f301dfd5b91142062be3129\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\83683f643f301dfd5b91142062be3129\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\ce7f7a6cde01c6b47e97f01761bc06ca\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\ce7f7a6cde01c6b47e97f01761bc06ca\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\bcef4348c724643802b38bbd122b3317\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\bcef4348c724643802b38bbd122b3317\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\0fec8cfeedbc6ceda33c196d0d6e0fc8\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\0fec8cfeedbc6ceda33c196d0d6e0fc8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\397c6f121ab6bc1622a5a3da33d56ede\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Optimus\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\397c6f121ab6bc1622a5a3da33d56ede\AndroidManifest.xml:20:5-44
+INJECTED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml
+INJECTED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml
+		ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml
+		INJECTED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml
+		ADDED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml
+		INJECTED from C:\GiT\Model-do-wyuczenia_2-\AdapteryTresci\app\src\main\AndroidManifest.xml
