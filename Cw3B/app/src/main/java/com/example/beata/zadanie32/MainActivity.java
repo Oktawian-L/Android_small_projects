@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
     public void zakaldka1(){
 
 
-        f11 = new fragment11();
+       /* f11 = new fragment11();
         f12 = new fragment12();
         transakcja = getSupportFragmentManager().beginTransaction();
         transakcja.add(R.id.kontener, f11);
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
         transakcja.add(R.id.kontener, f12);
         transakcja.detach(f12);
         transakcja.attach(f11);
-        transakcja.commit();
+        transakcja.commit();*/
     }
 
     @Override
